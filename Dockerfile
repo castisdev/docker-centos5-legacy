@@ -66,4 +66,4 @@ RUN yum install -y \
 ENV HOME /root
 
 # Define default command
-CMD ["bash"]
+CMD ["zsh"]
