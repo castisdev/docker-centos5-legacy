@@ -31,7 +31,7 @@ RUN yum install -y curl-devel
 RUN yum install -y xz
 RUN yum install -y file
 RUN yum install -y vim-enhanced
-RUN yum install -y unixODBC64-devel
+RUN yum install -y unixODBC-devel
 
 RUN yum install -y ncurses-devel
 RUN yum install -y zlib-devel
