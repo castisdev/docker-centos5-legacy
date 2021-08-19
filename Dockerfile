@@ -1,6 +1,8 @@
 # Pull base image
 FROM centos:centos5
 
+LABEL org.opencontainers.image.source https://github.com/castisdev/docker-centos5-legacy
+
 RUN sed -i 's/#baseurl=http:\/\/mirror.centos.org\/centos\/\$releasever/baseurl=http:\/\/vault.centos.org\/5.11/g' /etc/yum.repos.d/*
 RUN sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/*
 
